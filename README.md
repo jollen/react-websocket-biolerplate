@@ -25,7 +25,7 @@ $ gulp compile
 * ```gulp app```：將 ```src/App.js``` 文件 browserify 為 ```dist/App.js```
 * ```gulp compile```：分別以上二個命令
 
-開發相關命念：
+開發相關命令：
 
 * ```gulp watch```：監聽所有的 *.jsx 文件，文件有修改後，會自動調用 ```gulp compile``` 命令
 * ```gulp browser```：瀏覽器 Live Reload 功能，會自動開啟 ```dist/index.html``` 文件
@@ -48,7 +48,7 @@ $ gulp compile
 
 完整範例代碼位於 ```src/Component.jsx```。
 
-以下是完整的實現步驟說明。你可以根據以下的步驟，為現有的 React 元件加入 WebSocket 功能。
+以下是完整的實現步驟說明。根據此，也能為現有的 React 元件注入 WebSocket 功能。
 
 ```
 import React, { Component } from 'react';
