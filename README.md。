@@ -1,9 +1,9 @@
 
 實現 WebSocket React 元件的項目模板。你可以用這模板製作具 WebSocket 功能的元件，或是為現有的元件注入 WebSocket 功能。使用 Flux 模式。
 
-A React biolerplate that polyfill Websocket by Flux pattern.
+> A React biolerplate that polyfill Websocket by Flux pattern.
 
-## 安裝
+## 安裝說明
 
 ```
 $ git clone https://github.com/jollen/react-websocket-biolerplate.git
@@ -12,7 +12,10 @@ $ npm install
 $ gulp compile
 ```
 
-開啟 'dist/index.html' 文件即可。你會看到來自 ```wot.city``` 服務器的即時數據。要修改服務器來源，請開啟 ```src/App.jsx```，並修改 ```server``` prop。修改後必須重新運行 ```gulp compile``` 來編譯文件。
+使用瀏覽器開啟 ```dist/index.html``` 文件即可，你會看到來自 ```wot.city``` 服務器的即時數據。
+
+* 如果要修改服務器來源，請開啟 ```src/App.jsx```，並修改 ```server``` prop
+* 修改完成後，必須運行 ```gulp compile``` 命令重新編譯文件
 
 ## 使用教學
 
@@ -20,11 +23,11 @@ $ gulp compile
 * ```gulp app```：將 ```src/App.js``` 文件 browserify 為 ```dist/App.js```
 * ```gulp compile```：分別以上二個命令
 
-## 編程說明
+## 開發說明
 
 ### 製作元件
 
-讓 React 支援 WebSocket 協定，接收來自 WebSocket 服務器的數據推送。原則如下：
+讓 React 支援 WebSocket 協定，接收來自 WebSocket 服務器的數據推送。原理如下：
 
 * 使用 ```react-websocket-flux``` 模組，這是一個簡單 Flux 實現
 * 註冊事件函數到 ```react-websocket-flux``` 裡後，透過 ```onMessage``` 接收即時數據
@@ -102,7 +105,7 @@ render(
 );
 ```
 
-完整的文件請參考 ```src/App.jsx```。
+完整範例請參考 ```src/App.jsx```。
 
 ## License
 
