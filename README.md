@@ -27,7 +27,7 @@ $ gulp compile
 
 開發相關命令：
 
-* ```gulp watch```：監聽所有的 *.jsx 文件，文件有修改後，會自動調用 ```gulp compile``` 命令
+* ```gulp watch```：監聽所有的 *.jsx 文件，文件修改時，會自動調用 ```gulp compile``` 命令
 * ```gulp browser```：瀏覽器 Live Reload 功能，會自動開啟 ```dist/index.html``` 文件
 
 ## Quickstart
