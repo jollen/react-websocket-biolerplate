@@ -19,9 +19,16 @@ $ gulp compile
 
 ## 使用教學
 
+編譯相關命令：
+
 * ```gulp build```：將 ```src``` 目錄下的 *.jsx 文件編譯為 *.js
 * ```gulp app```：將 ```src/App.js``` 文件 browserify 為 ```dist/App.js```
 * ```gulp compile```：分別以上二個命令
+
+開發相關命念：
+
+* ```gulp watch```：監聽所有的 *.jsx 文件，文件有修改後，會自動調用 ```gulp compile``` 命令
+* ```gulp browser```：瀏覽器 Live Reload 功能，會自動開啟 ```dist/index.html``` 文件
 
 ## Quickstart
 
