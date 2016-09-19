@@ -23,7 +23,7 @@ $ gulp compile
 
 * ```gulp build```：將 ```src``` 目錄下的 *.jsx 文件編譯為 *.js
 * ```gulp app```：將 ```src/App.js``` 文件 browserify 為 ```dist/App.js```
-* ```gulp compile```：分別以上二個命令
+* ```gulp compile```：等於以上二個命令
 
 開發相關命令：
 
