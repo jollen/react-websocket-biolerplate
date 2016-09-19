@@ -91,11 +91,16 @@ export class MyComponent extends Component {
 $ gulp compile
 ```
 
-編譯好的文件位於 ```src/Component.js```。
+編譯好的文件位於 ```src/Component.js```：你可以開始在 React 應用程式裡使用此元件了。
 
-### 元件使用
+### 使用元件
 
-在 React 應用裡使用時，只要加入 ```server``` props 來指定 WebSocket 服務器 URI 即可。可以使用本專案提供的 ```wss://wot.city/object/testman/viewer``` 做測試。範例如下：
+在 React 應用程式裡，引入你的元件使用：
+
+* 加入 ```server``` prop 指定 WebSocket 服務器 URI
+* 可以使用本專案提供的 ```wss://wot.city/object/testman/viewer``` 測試數據
+
+範例片斷如下：
 
 ```
 render(
