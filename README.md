@@ -16,9 +16,16 @@ $ gulp compile
 
 Open 'dist/index.html' with your browser.
 
-## Usage
+## 使用教學
 
-在 React 元件裡加入 WebSocket 的步驟如下。
+### 製作元件
+
+讓 React 支援 WebSocket 協定，接收來自 WebSocket 服務器的數據推送。原則如下：
+
+* 使用 ```react-websocket-flux``` 模組，這是一個簡單 Flux 實現
+* 註冊事件函數到 ```react-websocket-flux``` 裡後，透過 ```onMessage``` 接收即時數據
+
+元件的範例代碼位於 ```src/Component.jsx```，實現細節說明如如下。你可以根據以下的步驟，為現有的 React 元件加入 WebSocket 功能。
 
 ```
 import React, { Component } from 'react';
@@ -76,6 +83,22 @@ export class MyComponent extends Component {
 ```
 $ gulp compile
 ```
+
+編譯好的文件位於 ```src/Component.js```。
+
+### 元件使用
+
+在 React 應用裡使用時，只要加入 ```server``` props 來指定 WebSocket 服務器 URI 即可。可以使用本專案提供的 ```wss://wot.city/object/testman/viewer``` 做測試。範例如下：
+
+```
+render(
+    <MyComponent server="wss://wot.city/object/testman/viewer">
+    </MyComponent>,
+    document.getElementById('content')
+);
+```
+
+完整的文件請參考 ```src/App.jsx```。
 
 ## License
 
