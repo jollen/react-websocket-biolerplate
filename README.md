@@ -103,6 +103,10 @@ $ gulp compile
 範例片斷如下：
 
 ```
+// 我的 React 元件
+import { MyComponent } from './Component';
+
+// 加入 server prop
 render(
     <MyComponent server="wss://wot.city/object/testman/viewer">
     </MyComponent>,
