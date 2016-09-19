@@ -1,11 +1,9 @@
 
-實作具備 WebSocket 的 React 元件
+實現 WebSocket React 元件的項目模板。你可以用這模板製作具 WebSocket 功能的元件，或是為現有的元件注入 WebSocket 功能。使用 Flux 模式。
 
 A React biolerplate that polyfill Websocket by Flux pattern.
 
-## Install
-
-To setup the package.
+## 安裝
 
 ```
 $ git clone https://github.com/jollen/react-websocket-biolerplate.git
@@ -14,7 +12,7 @@ $ npm install
 $ gulp compile
 ```
 
-Open 'dist/index.html' with your browser.
+開啟 'dist/index.html' 文件即可。你會看到來自 ```wot.city``` 服務器的即時數據。要修改服務器來源，請開啟 ```src/App.jsx```，並修改 ```server``` prop。修改後必須重新運行 ```gulp compile``` 來編譯文件。
 
 ## 使用教學
 
